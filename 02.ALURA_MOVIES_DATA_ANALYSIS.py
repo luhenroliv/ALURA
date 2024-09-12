@@ -80,8 +80,8 @@ notas['nota'].mean()
 #02
 ##Other formats dataframe (pandas)
 notas.nota.head() #5 firts line
-notas.nota.plot() #crate graphic disorganized
-notas.nota.plot(kind='hist') #crate graphic coherent
+notas.nota.plot() #create graphic disorganized
+notas.nota.plot(kind='hist') #create graphic coherent
 notas['nota'].median() #median number
 notas.nota.describe() #descriptive statistics
 
