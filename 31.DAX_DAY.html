@@ -1,0 +1,21 @@
+A função DAY em DAX é usada para extrair o dia do mês de uma data. Isso é útil quando você precisa analisar ou agrupar dados com base no dia específico de um mês. Aqui estão três exemplos de como usar a função DAY no Power BI:
+
+Exemplo 1: Extrair o Dia de Datas de Vendas  
+Suponha que você tenha uma tabela chamada Vendas com uma coluna DataVenda. Para extrair o dia do mês de cada venda, você pode usar:
+
+dax
+DiaVenda = DAY(Vendas[DataVenda])
+
+
+Exemplo 2: Analisar Vendas Diárias  
+Imagine que você queira analisar as vendas diárias em uma tabela chamada VendasDiarias. Para criar uma coluna que mostre apenas o dia do mês, você pode aplicar a função DAY:
+
+dax
+DiaDoMes = DAY(VendasDiarias[Data])
+
+
+Exemplo 3: Filtrar Transações por Dia Específico  
+Considere uma tabela chamada Transacoes com uma coluna DataTransacao. Se você quiser filtrar transações que ocorreram no dia 15 de qualquer mês, você pode usar a função DAY em uma medida ou coluna calculada:
+
+dax
+DiaTransacao = DAY(Transacoes[DataTransacao])
